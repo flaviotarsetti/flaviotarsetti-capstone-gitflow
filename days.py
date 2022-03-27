@@ -7,4 +7,4 @@ def get_top_days(tweets):
     print('{:^4}{:^30}{:^20}'.format("N°","Day", "Number of tweets"))
     for i in range(min(10, len(top_days))):
         day = datetime.strptime(top_days[i][0], '%Y-%m-%d').strftime("%d-%B-%Y")
-        print('{:^4}{:^30}{:^20}'.format(i+1, day, top_days[i][1]))
+        print('{:^4}{:^30}{:^20}'.format(i + 1, day, top_days[i][1]))
