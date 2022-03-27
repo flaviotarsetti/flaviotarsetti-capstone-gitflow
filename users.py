@@ -1,7 +1,7 @@
 from collections import Counter
 
 def get_top_users(tweets):
-    users = Counter(d['user']["username"] for d in tweets[0:100])
+    users = Counter(d['user']["username"] for d in tweets)
     top_users = sorted(users.items(), key=lambda item: item[1], reverse=True)
     print('{:^4}{:^30}{:^20}'.format("N°","Username", "Number of tweets"))
     for i in range(10):
